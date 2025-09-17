@@ -1,0 +1,290 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Refriservicios y compusoporte</title>
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1);} </script>
+<script src="js/jquery.min.js"></script>
+
+<link rel="stylesheet" href="css/fwslider.css" media="all">
+<script src="js/jquery-ui.min.js"></script>
+<script src="js/fwslider.js"></script>
+<!--end slider -->
+<script type="text/javascript">
+        $(document).ready(function() {
+            $(".dropdown img.flag").addClass("flagvisibility");
+
+            $(".dropdown dt a").click(function() {
+                $(".dropdown dd ul").toggle();
+            });
+                        
+            $(".dropdown dd ul li a").click(function() {
+                var text = $(this).html();
+                $(".dropdown dt a span").html(text);
+                $(".dropdown dd ul").hide();
+                $("#result").html("Selected value is: " + getSelectedValue("sample"));
+            });
+                        
+            function getSelectedValue(id) {
+                return $("#" + id).find("dt a span.value").html();
+            }
+
+            $(document).bind('click', function(e) {
+                var $clicked = $(e.target);
+                if (! $clicked.parents().hasClass("dropdown"))
+                    $(".dropdown dd ul").hide();
+            });
+
+
+            $("#flagSwitcher").click(function() {
+                $(".dropdown img.flag").toggleClass("flagvisibility");
+            });
+        });
+     </script> 
+</head>
+<body>
+	<div class="header">
+		<div class="container">
+			<div class="row">
+			  <div class="col-md-12">
+				 <div class="header-left">
+					 <div class="logo">
+						<a href=""><img src="images/logo.jpg" height="50" width="40" alt=""/></a>
+					 </div>
+
+					 
+
+
+					 <nav id="menu">
+                     
+                <ul>
+                     <li><a href="">servicios↓</a>
+                     
+                <ul>
+                     <li><a href="Software.html">Software</a></li>
+                     <li><a href="hardware.html">hardware</a></li>
+                     <li><a href="programacion.html">Programaciòn</a></li>
+                     <li><a href="refrigeracion.html">Refrigeraciòn</a></li>
+                </ul>
+
+                </nav>
+
+								<div class="clear"></div>
+							</ul>
+							
+							<script type="text/javascript" src="js/responsive-nav.js"></script>
+				    </div>
+
+	    		    <div class="clear"></div>
+	    	    </div>
+
+						<script src="js/classie.js"></script>
+						<script src="js/uisearch.js"></script>
+						<script>
+							new UISearch( document.getElementById( 'sb-search' ) );
+						</script>
+	       </div>
+	      </div>
+		 </div>
+	    </div>
+	</div>
+	<div class="banner">
+
+       <div id="fwslider">
+         <div class="slider_container">
+            <div class="slide"> 
+               <img src="images/logo.jpg" class="img-responsive6" alt=""/>
+                <div class="slide_content">
+                    <div class="slide_content_wrap">
+                    </div>
+                </div>
+        </div>
+       </div>
+      </div>
+	  <div class="main">
+		<div class="content-top">
+			<h2>Galeria de Trabajos de aires acondicionados</h2>
+			
+			<div class="close_but"><i class="close1"> </i></div>
+				<ul id="flexiselDemo3">
+				<li><img src="images/aire1.jpg" /></li>
+				<li><img src="images/aire2.jpg" /></li>
+				<li><img src="images/aire3.jpg" /></li>
+				<li><img src="images/aire4.jpg" /></li>
+				<li><img src="images/aire6.jpg" /></li>
+				<li><img src="images/aire7.jpg" /></li>
+			</ul>
+
+			<script type="text/javascript">
+		$(window).load(function() {
+			$("#flexiselDemo3").flexisel({
+				visibleItems: 5,
+				animationSpeed: 1000,
+				autoPlay: true,
+				autoPlaySpeed: 3000,    		
+				pauseOnHover: true,
+				enableResponsiveBreakpoints: true,
+		    	responsiveBreakpoints: { 
+		    		portrait: { 
+		    			changePoint:480,
+		    			visibleItems: 1
+		    		}, 
+		    		landscape: { 
+		    			changePoint:640,
+		    			visibleItems: 2
+		    		},
+		    		tablet: { 
+		    			changePoint:768,
+		    			visibleItems: 3
+		    		}
+		    	}
+		    });
+		    
+		});
+
+		</script>
+
+		<div class="timers"></div>
+        <div class="slidePrev"><span></span></div>
+        <div class="slideNext"><span></span></div>
+       </div>
+      </div>
+
+	  <div class="main">
+		<div class="content-top">
+			<h2>Galeria de Trabajos de neveras</h2>	
+			<div class="close_but"><i class="close1"> </i></div>
+				<ul id="flexiselDemo5">
+				<li><img src="images/nevera2.jpg" /></li>
+				<li><img src="images/nevera3.jpg" height="211" /></li>
+				<li><img src="images/nevera4.jpg" height="211" /></li>
+				
+
+			</ul>
+
+			<script type="text/javascript">
+		$(window).load(function() {
+			$("#flexiselDemo5").flexisel({
+				visibleItems: 5,
+				animationSpeed: 1000,
+				autoPlay: true,
+				autoPlaySpeed: 3000,    		
+				pauseOnHover: true,
+				enableResponsiveBreakpoints: true,
+		    	responsiveBreakpoints: { 
+		    		portrait: { 
+		    			changePoint:480,
+		    			visibleItems: 1
+		    		}, 
+		    		landscape: { 
+		    			changePoint:640,
+		    			visibleItems: 2
+		    		},
+		    		tablet: { 
+		    			changePoint:768,
+		    			visibleItems: 3
+		    		}
+		    	}
+		    });
+		    
+		});
+
+	</script>
+
+
+		<div class="timers"></div>
+        <div class="slidePrev"><span></span></div>
+        <div class="slideNext"><span></span></div>
+       </div>
+      </div>
+
+	  <div class="main">
+		<div class="content-top">
+			<h2>Galeria de Trabajos de computadoras</h2>	
+			<div class="close_but"><i class="close1"> </i></div>
+				<ul id="flexiselDemo4">
+				<li><img src="images/pc1.jpg" /></li>
+				<li><img src="images/pc2.jpg" height="180"/></li>
+				<li><img src="images/pc3.jpg" height="180"/></li>
+				<li><img src="images/pc4.jpg" height="180"/></li>
+				<li><img src="images/pc5.jpg" height="180"/></li>
+				<li><img src="images/pc6.jpg" height="180"/></li>
+
+			</ul>
+
+			<script type="text/javascript">
+		$(window).load(function() {
+			$("#flexiselDemo4").flexisel({
+				visibleItems: 5,
+				animationSpeed: 1000,
+				autoPlay: true,
+				autoPlaySpeed: 3000,    		
+				pauseOnHover: true,
+				enableResponsiveBreakpoints: true,
+		    	responsiveBreakpoints: { 
+		    		portrait: { 
+		    			changePoint:480,
+		    			visibleItems: 1
+		    		}, 
+		    		landscape: { 
+		    			changePoint:640,
+		    			visibleItems: 2
+		    		},
+		    		tablet: { 
+		    			changePoint:768,
+		    			visibleItems: 3
+		    		}
+		    	}
+		    });
+		    
+		});
+
+	</script>
+
+
+		<script type="text/javascript" src="js/jquery.flexisel.js"></script>
+		</div>
+	</div>
+
+
+
+
+		<div class="footer">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>CONTACTANOS</h4>
+							<li><P>• ING.Noel Leal, tlf:04146155276</P></li>
+							<li><P>• ING.Eliam Manjarres, tlf:04246690371</P></li>
+							<li></li>
+						</ul>
+					</div>
+
+					<div class="col-md-3">
+						<ul class="footer_box">
+							<h4>REDES SOCIALES</h4>
+
+							<ul class="social">	
+							  <li class="facebook"><a href="https://m.facebook.com/61576977447142/"><span> </span></a></li>
+							  <li class="instagram"><a href="https://www.instagram.com/refriservicios.y.compusoporte/"><span> </span></a></li>	
+							  <!--<li class="pinterest"><a href="#"><span> </span></a></li>-->	
+							  <!--<li class="youtube"><a href="#"><span> </span></a></li>-->										  				
+						    </ul>
+		   					
+						</ul>
+					</div>
+				</div>
+				<div class="row footer_bottom">
+				    <div class="copy">
+			           <p>2025 Creado por Refriservicios y Compusoporte.</p>
+		            </div>
+   				</div>
+			</div>
+		</div>
+</body>	
+</html>
